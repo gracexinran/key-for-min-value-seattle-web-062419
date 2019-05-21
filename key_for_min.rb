@@ -9,8 +9,9 @@ def key_for_min_value(name_hash)
     name_hash.each do |key, value|
       if value < m
         m = value
+        n = key
       end
     end
-    name_hash[value]
+    n
   end
 end
