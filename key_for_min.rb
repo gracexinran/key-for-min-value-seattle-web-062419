@@ -6,12 +6,13 @@ def key_for_min_value(name_hash)
     return nil
   else
     m = name_hash.first[1]
+    n = name_hash.first[0]
     name_hash.collect do |a, b|
       if b < m
         m = b
         n = a
       end
     end
-      return a
+      return n
   end
 end
